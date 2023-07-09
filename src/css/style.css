@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-items > ul > li {
+  padding: 10px;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+}
+
+.restaurant-container,
+.search-container {
+  margin-top: 15px;
+  margin: 2rem 4rem 0 4rem;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.search-restaurant {
+  width: 30%;
+  padding: 0.8rem 30px;
+}
+.search-restaurant::placeholder {
+  color: #999999;
+}
+.search-restaurant::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* Adjust this value based on the desired position of the search icon */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px; /* Adjust this value based on the size of your search icon */
+  height: 16px; /* Adjust this value based on the size of your search icon */
+  /* background-image: url("path/to/your/search-icon.png"); */
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+}
+.restaurant-container {
+  display: flex;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+.restaurant-card {
+  width: 20%;
+}
+.restaurant-card > img {
+  width: 260px;
+}
